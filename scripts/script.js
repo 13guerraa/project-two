@@ -20,23 +20,16 @@ $(function () {
 
 
 
-    function desktopMenu() {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 50 && $(window).width() > 768) {
-                $('header.desktop').fadeIn(500);
-            } else {
-                $('header.desktop').fadeOut(500);
-            }
-        })
-    }
+   
 
     //when the page loads call toggleIcon;
     $(toggleIcon);
     $(closeMobileMenu);
     $(desktopMenu);
 
-   $(function() {
-	var i = 0;
+
+
+    var i = 0;
 	slideCount = 5;
 	function timeout() {
 		setTimeout(function() {
@@ -55,8 +48,6 @@ $(function () {
 		}, 7000);
 	};
 	timeout();
-});
-
 
 
     // End of Your Code . Don't delete that line below!!
