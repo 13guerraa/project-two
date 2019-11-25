@@ -1,24 +1,300 @@
 /* Enter your Styles below! */
 
 
-body { 
-	font-family: Helvetica, sans-serif;
-	 }
+body {
+    background-color: #FFF6D7;
 
-h1, h2, h3, h4 {
-	font-family: Helvetica, sans-serif;
 }
 
-blockquote {
-	margin: 20px 60px;
-	font-family: Helvetica, sans-serif;
+h1,
+h2,
+h3,
+h4 {}
+
+
+
+
+
+/*-----------------------HEADER & NAV------------------------------*/
+header {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 76px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
-header {margin-bottom: 20px;}
+.logo {
+    margin-left: 30px;
+    float: left;
+    width: 200px;
+    height: 200px;
+    background: url(../images/roxys-logo.png) no-repeat center;
+    background-size: 200px;
+    display: block;
+    padding-top: 30px
+}
 
 
-/*
-font-family: 'Mansalva', cursive;
-font-family: 'Dosis', sans-serif;
-font-family: 'Indie Flower', cursive;
-*/
+a {
+    color: red;
+    text-decoration: none;
+    font-family: bello-caps, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24pt;
+}
+
+/* START of Mobile Menu */
+.nav,
+.desktop {
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    z-index: 900;
+    padding-bottom: 0px;
+}
+
+.icon {
+    position: fixed;
+    cursor: pointer;
+    top: 5%;
+    right: 0%;
+    width: 40px;
+    height: 45px;
+    transform: translate(-50%, -50%);
+    display: block;
+    z-index: 1000;
+}
+
+.roxys-mobile {
+    width: 40px;
+    height: 4px;
+    line-height: 70px;
+    background: #666;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+
+.roxys-mobile:before,
+.roxys-mobile:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #666;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+
+.roxys-mobile:before {
+    top: -10px;
+}
+
+.roxys-mobile:after {
+    top: 10px;
+}
+
+.icon.active .roxys-mobile {
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+.icon.active .roxys-mobile:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.icon.active .roxys-mobile:after {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.menu-mobile {
+    background-color: #efefef;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.menu-mobile,
+.menu-mobile a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu-mobile a {
+    clear: right;
+    text-decoration: none;
+    color: #C4050D;
+    height: 70px;
+    line-height: 70px;
+}
+
+.menu-mobile a:hover {
+    color: red;
+}
+
+.desktop,
+.menu-desktop,
+.menu-mobile {
+    display: none;
+}
+
+/* END OF Mobile Menu */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* START of desktop menu for 768 media query */
+    .menu-desktop {
+        width: 100%;
+        display: block;
+        padding: 0;
+        line-height: 50px;
+        justify-content: space-evenly;
+        flex-direction: row;
+        height: 0;
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .menu-desktop a {
+        display: inline-flex;
+        margin-right: 30px;
+        height: 0;
+        line-height: 50px;
+        text-decoration: none;
+        color: #C4050D;
+        justify-content: space-evenly;
+    }
+
+    .menu-desktop a:hover {
+        color: red;
+    }
+    
+
+    .desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        display: block;
+    }
+
+    header.nav,
+    .menu-mobile {
+        display: none;
+    }
+
+    /* END of desktop menu for 768 media query */
+
+}
+
+/*-------------------------CONTACT FORM---------------------------*/
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+}
+
+input[type=submit] {
+    background-color: #1DA503;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: cronos-pro, sans-serif;
+    font-size: 14px;
+}
+
+input[type=submit]:hover {
+    background-color: #177703;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #F4DC22;
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 60px;
+    margin-top: 200px;
+    margin-left: 180px;
+    margin-right: 180px;
+    font-family: bello-caps, sans-serif;
+    color: black;
+    box-shadow: 10px 10px 5px lightgrey;
+    
+
+}
+
+.form-top {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.form-top h2 {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.form-top p {
+    font-family: cronos-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+    
+}
+
+/*----------------------MEDIA QUERIES------------------------------*/
+@media only screen and (max-width: 768px) {
+
+    .container {
+        width: 260px;
+    }
+}
+
+@media only screen and min-width: 1024px) {
+    body {}
+
+}
+
+@media only screen and (min-width: 1200px) {
+    body {}
+}
+
+.island {
+    background-image: url('../images/island-1-04.png');
+    background-repeat: no-repeat;
+    padding: 0px 0px 380px 0px;
+    margin-top: 35px;
+    height: 100%;
+    background-size: auto
+}

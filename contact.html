@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Project Two - Homepage</title>
+    <title>Project Two - Contact Page</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="https://use.typekit.net/cgp4bkh.css">
+   <link rel="stylesheet" href="https://use.typekit.net/cgp4bkh.css">
 </head>
 
 <body>
@@ -37,25 +37,31 @@
                 <a href="locations.html">LOCATIONS</a>
             </div>
         </header>
-        <div class="island"> 
-        </div>
-        <div class="tradition">
-            <h1>Continuing the <br> Island Tradition</h1>
-        </div>
     </header>
-
-
-    <main>
-        <div class="red-back">
-            <h2>WELCOME TO ROXY'S ISLAND GRILL</h2>
-            <p>Our focus is to continue island tradition. Provide the <br> best quality island favorites at an affordable price. Kick <br> back, loosen your tie and reminisce about the islands <br> while we prepare your meal.</p>
-            <p>Mahalo</p>
-            <img src="images/original.jpg">
+    <div class="container">
+        <div class="form-top">
+            <h2>CONTACT US</h2>
+            <p> We would love to hear from you with any questions or concerns you may have. Mahalo!</p> 
         </div>
-        
-        
-     
-    </main>
+        <form action="action_page.php">
+
+            <label for="firstname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+            <label for="message">Message</label>
+            <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+
+
     <footer>
         <!-- footer content here -->
     </footer>
@@ -63,4 +69,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- link for your script file -->
     <script src="scripts/script.js"></script>
-</body></html>
+</body>
+
+</html>
