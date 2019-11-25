@@ -8,7 +8,7 @@ body {
 
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
@@ -29,7 +29,7 @@ header {
     width: 280px;
     height: 280px;
     background: url(../images/roxys-logo.png) no-repeat center;
-    background-size:300px;
+    background-size: 300px;
     display: block;
 }
 
@@ -40,7 +40,7 @@ a {
     font-family: bello-caps, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 24pt;
+    font-size: 18pt;
 }
 
 
@@ -209,13 +209,15 @@ a {
 
 .container-red {
     background-color: #C4050D;
-    margin-top: -20px;
+    margin-top: 0px;
     padding: 40px;
-    padding-bottom: 250px;
-    margin-left: 30px;
-    margin-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+    margin-bottom: 200px
 }
 
 .container-red h2 {
@@ -232,7 +234,7 @@ a {
     font-size: 20pt;
     padding-top: 30px;
     line-height: 1.2;
-    padding-right: 900px;
+    padding-right: 800px;
     min-width: 602px;
 }
 
@@ -254,14 +256,16 @@ a {
     color: white;
     font-size: 55pt;
     text-align: right;
-    padding-right: 25px;
+    padding-right: 40px;
+    
 }
 
 
 
 .og-roxys {
-    margin-top: -400px;
-    text-align: right;
+    margin-top: -600px;
+    margin-left: 800px ;
+    width: 70%;
 }
 
 body {
@@ -325,21 +329,21 @@ body {
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
 .column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
 }
 
 .column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 
 /*---------------------LOCATIONS----------------------------------*/
@@ -385,7 +389,7 @@ body {
     font-size: 14pt;
     text-align: left;
     padding-top: 10px;
-    
+
 }
 
 .locations p.hours {
@@ -487,6 +491,16 @@ input[type=submit]:hover {
 @media only screen and (max-width: 768px) {
 
     body {}
+
+    .logo {
+        margin-left: 30px;
+        float: left;
+        width: 180px;
+        height: 180px;
+        background: url(../images/roxys-logo.png) no-repeat center;
+        background-size: 200px;
+        display: block;
+    }
 
     .container {
         width: 430px;
@@ -672,17 +686,17 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
 }
 
 @media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
