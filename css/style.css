@@ -299,8 +299,8 @@ header {
 }
 
 #myBtn-2 {
-    background-color: #FFF6D7;
-    color: #1DA503;
+    background-color: #1DA503;
+    color: white;
     font-family: cronos-pro, sans-serif;
     font-size: 12pt;
     margin-left: 50%;
@@ -308,6 +308,8 @@ header {
     border: none;
     font-weight: 600;
     text-decoration: overline;
+    border-radius: 5px;
+    padding-top: 7px;
 }
 
 .footer {
@@ -479,33 +481,34 @@ input[type=submit]:hover {
 
 
 .menuContainer {
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 100px;
 }
 
-buton, input {
-	font-size: 12px;
-	padding: 5px 10px 15px;
+buton,
+input {
+    font-size: 12px;
+    padding: 5px 10px 15px;
 }
 
 #btnAll {
-	background-color: #F4DC22; 
-	padding-bottom:10px;
+    background-color: #F4DC22;
+    padding-bottom: 10px;
 }
 
 .menuListContainer {
-	background-color: #F4DC22; 
-	min-height: 500px; 
-	position: relative; 
-	top: 30px; 
-	width:90%; 
-	border-radius: 15px; 
-	border-right: 1px solid #F4DC22; 
-	border-bottom: 1px solid #F4DC22; 
-	padding:20px 0 0 25px;
-	padding:20px 0 0 25px;
+    background-color: #F4DC22;
+    min-height: 500px;
+    position: relative;
+    top: 30px;
+    width: 90%;
+    border-radius: 15px;
+    border-right: 1px solid #F4DC22;
+    border-bottom: 1px solid #F4DC22;
+    padding: 20px 0 0 25px;
+    padding: 20px 0 0 25px;
 }
 
 .menuListContainer h2 {
@@ -523,38 +526,43 @@ buton, input {
 }
 
 .tabsContainer {
-	position: absolute; 
-	top:0;
+    position: absolute;
+    top: 0;
 }
 
 .menuContainer {
-	display: block; 
-	width:80%; 
-	margin-left: 10%; 
-	margin-right: 10%; 
-	position: relative; 
-	font-family: bello-pro, sans-serif; 
-	font-size: 16px;
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    font-family: bello-pro, sans-serif;
+    font-size: 16px;
 }
 
 
-.allMenuColor {background-color: #;}
+.allMenuColor {
+    background-color: #;
+}
 
-.activeButton {background-color: #FFD485;}
+.activeButton {
+    background-color: #FFD485;
+}
 
-button, input {
-  display: inline-block;
-  cursor: pointer;
-  padding: 5px 10px;
-  border-left: none;
-  border-top:  1px solid #F4DC22;
-  border-bottom: none;
-  border-right: 1px solid #F4DC22;
-  color: #1DA503;
-  border-radius: 5px 5px 0 0;
-  background-color: #F4DC22;
-  font-family: bello-Caps, sans-serif; 
-  font-size: 18px;
+button,
+input {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-left: none;
+    border-top: 1px solid #F4DC22;
+    border-bottom: none;
+    border-right: 1px solid #F4DC22;
+    color: #1DA503;
+    border-radius: 5px 5px 0 0;
+    background-color: #F4DC22;
+    font-family: bello-Caps, sans-serif;
+    font-size: 18px;
 }
 
 
@@ -872,8 +880,3 @@ button, input {
 
     @media only screen and (max-width: 1024px) {}
 }
-
-
-
-
-
