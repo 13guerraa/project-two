@@ -4,12 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Project Two - Homepage</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://use.typekit.net/cgp4bkh.css">
 </head>
@@ -38,10 +35,11 @@
             </div>
         </header>
     </header>
-    
-     <div class="island">
-         <h1>Continuing the <br> Island Tradition</h1>
-        </div>
+
+    <div class="island">
+        <img src="images/island-1.png">
+        <h1>Continuing the <br> Island Tradition</h1>
+    </div>
 
 
     <main>
@@ -61,6 +59,7 @@
             </li>
             <li id='quote1'>
                 “I don't know how it's taken me so long to review Roxy's considering this is my go-to lunch spot in the Beaverton area. Large portions and the meat ALWAYS tastes fresh and delicious.”
+                <div class="site">-Frank R.</div>
             </li>
             <li id='quote2'>
                 “I LOVE Roxy's. This is my go to guilty pleasure. Their spicy shoyu chicken and sweet garlic chicken and Mac salad are the best around. If you're considering it, just go ahead and do it.”
@@ -73,37 +72,46 @@
                 <img src="./images/food-1.jpg" style="width:100%">
                 <img src="./images/food-2.jpg" style="width:100%">
                 <img src="./images/food-3.jpg" style="width:100%">
-                <img src="./images/food-4.jpg" style="width:100%">
+
             </div>
             <div class="column">
                 <img src="./images/food-9.jpg" style="width:100%">
                 <img src="./images/food-6.jpg" style="width:100%">
                 <img src="./images/food-7.jpg" style="width:100%">
-                <img src="./images/food-8.jpg" style="width:100%">
+
             </div>
             <div class="column">
                 <img src="./images/food-10.jpg" style="width:100%">
                 <img src="./images/food-11.jpg" style="width:100%">
-                <img src="./images/food-5.jpg" style="width:100%">
-                <img src="./images/food-12.jpg" style="width:100%">
-                
+                <img src="./images/food-13.jpg" style="width:100%">
             </div>
             <div class="column">
-                 <img src="./images/food-14.jpg" style="width:100%">
-                <img src="./images/inside-1.jpg" style="width:100%">
-                <img src="./images/food-13.jpg" style="width:100%">
+                <img src="./images/food-4.jpg" style="width:100%">
                 <img src="./images/inside-2.jpg" style="width:100%">
+                <img src="./images/food-5.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="./images/food-14.jpg" style="width:100%">
+                <img src="./images/food-8.jpg" style="width:100%">
+                <img src="./images/food-12.jpg" style="width:100%">
             </div>
         </div>
-
+        
+        <button onclick="topFunction()" id="myBtn-2" title="Go to top">BACK TO TOP</button>
     </main>
-    <footer>
-        <!-- footer content here -->
-    </footer>
+    <div class="footer">
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="locations.html">LOCATIONS</a>
+        <a href="https://www.facebook.com/Roxys-Island-Grill-148963285126216/" class="facebook"> <img src="./images/facebook.png" alt="facebook-icon"></a>
+
+        <a href="https://www.yelp.com/search?find_desc=roxys%20island%20grill&find_loc=Portland%2C%20OR" class="facebook"> <img src="./images/yelp.png" alt="yelp-icon"></a>
+
+    </div>
+
     <!-- link for jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- link for your script file -->
     <script src="scripts/script.js"></script>
-</body>
-
-</html>
+</body></html>

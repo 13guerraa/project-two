@@ -41,52 +41,97 @@
 
 
     <main>
-        <h1>From the Hotline</h1>
-            <p>Shoyu Chicken</p>
-            <p>Teriyaki Chicken</p>
-            <p>Kalbi Chicken</p>
-            <p>Kalua Pork</p>
+        <div class="appcontainer">
 
-        <h1>Beef Plates</h1>
-            <p>Teriyaki Beef</p>
-            <p>Kalbi Ribs</p>
-        
-        <h1>Specialty Items</h1>
-            <p>Hamburger Steak</p>
-            <p>Loco Moco</p>
-            <p>Teri Loco Moco</p>
-            <p>Saimin</p>
-            <p>Spam Musubi</p>
-        
-        <h1>Crispy Fried</h1>
-            <p>Chicken Katsu</p>
-            <p>Orange Chicken</p>
-            <p>Pineapple Chicken</p>
-            <p>Garlic Chicken</p>
-            <p>Crispy Kalbi Chicken</p>
-        
-        <h1>Sandwiches</h1>
-            <h2>Chicken</h2>
-                <p>Shoyu</p>
-                <p>Teri</p>
-                <p>Kalbi</p>
-                <p>Char Siu</p>
-                <p>Katsu</p>
-            <h2>Pork</h2>
-                <p>Adobo</p>
-                <p>Kalua</p>
-        
-        <h1>Burgers</h1>
-            <h2>Crafted in House 1/3 lb Burgers</h2>
-                <p>Plain Burger</p>
-                <p>Maile's Teri Burger Deluxe</p>
-                <p>Brew's Gravy Burger w/ Sauteed Onions</p>
-                <p>Loco Moco Burger</p>
-                <p>Katsu</p>
+            <div class="menuContainer">
+                <!--TABS START-->
+                <div class="tabsContainer">
+                    <input class="button" type="button" value="All" id="btnAll" />
+                    <input class="button" type="button" value="From the Hotline" id="btnHotline" />
+                    <input class="button" type="button" value="Beef Plates" id="btnBeef" />
+                    <input class="button" type="button" value="Specialty Items" id="btnSpecialty" />
+                    <input class="button" type="button" value="Crispy Fried" id="btnCrispy" />
+                    <input class="button" type="button" value="Sandwiches" id="btnSandwiches" />
+                    <input class="button" type="button" value="Burgers" id="btnBurgers" />
+                </div>
+
+                <div class="menuListContainer allMenuColor">
+                        <div class="hotline menuList">
+                            <h2>From the Hotline</h2>
+                            <ul>
+                                <li>Shoyu Chicken</li>
+                                <li>Teriyaki Chicken</li>
+                                <li>Kalbi Chicken</li>
+                                <li>Kalua Pork</li>
+                            </ul>
+                        </div>
+                        <div class="beef menuList">
+                            <h2>Beef Plates</h2>
+                            <ul>
+                                <li>Teriyaki Beef</li>
+                                <li>Kalbi Ribs</li>
+                            </ul>
+                        </div>
+                        <div class="specialty menuList">
+                            <h2>Specialty Items</h2>
+                            <ul>
+                                <li>Hamburger Steak</li>
+                                <li>Loco Moco</li>
+                                <li>Teri Loco Moco</li>
+                                <li>Saimin</li>
+                                <li>Spam Musubi</li>
+                            </ul>
+                        </div>
+                    <div class="crispy menuList">
+                        <h2>Crispy Fried</h2>
+                        <ul>
+                            <li>Chicken Katsu</li>
+                            <li>Orange Chicken</li>
+                            <li>Pineapple Chicken</li>
+                            <li>Garlic Chicken</li>
+                            <li>Crispy Kalbi Chicken</li>
+                        </ul>
+                    </div>
+
+                    <div class="sandwiches menuList">
+                        <h2>Sandwiches</h2>
+                        <ul>
+                            <li>Shoyu Chicken</li>
+                            <li>Teri Chicken</li>
+                            <li>Kalbi Chicken</li>
+                            <li>Char Siu Chicken</li>
+                            <li>Katsu Chicken</li>
+                            <li>Adobo Pork</li>
+                            <li>Kalua Pork</li>
+                        </ul>
+                    </div>
+                    <div class="burgers menuList">
+                        <h2>Burgers</h2>
+                        <ul>
+                            <h2>Crafted in House 1/3 lb Burgers</h2>
+                            <li>Plain Burger</li>
+                            <li>Maile's Teri Burger Deluxe</li>
+                            <li>Brew's Gravy Burger w/ Sauteed Onions</li>
+                            <li>Loco Moco Burger</li>
+                            <li>Katsu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
     <footer>
-        <!-- footer content here -->
+        <div class="footer">
+            <a href="index.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="locations.html">LOCATIONS</a>
+            <a href="https://www.facebook.com/Roxys-Island-Grill-148963285126216/" class="facebook"> <img src="./images/facebook.png" alt="facebook-icon"></a>
+
+            <a href="https://www.yelp.com/search?find_desc=roxys%20island%20grill&find_loc=Portland%2C%20OR" class="facebook"> <img src="./images/yelp.png" alt="yelp-icon"></a>
+
+        </div><!-- footer content here -->
     </footer>
     <!-- link for jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

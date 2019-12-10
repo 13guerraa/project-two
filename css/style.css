@@ -1,10 +1,20 @@
 /* Enter your Styles below! */
+/*---COLORS----
+
+GREEN ----- #1DA503
+BEIGE ----- #FFF6D7
+RED ------- #C4050D
+YELLOW ---- #F4DC22
+
+------*/
+
 
 
 body {
     background-color: #FFF6D7;
-
+    overflow-x: hidden;
 }
+
 
 
 * {
@@ -14,47 +24,39 @@ body {
 
 /*-----------------------HEADER & NAV------------------------------*/
 header {
-    margin-bottom: 20px;
+
     width: 100%;
     height: 76px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
 }
 
 .logo {
     margin-left: 30px;
     float: left;
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     background: url(../images/roxys-logo.png) no-repeat center;
-    background-size: 300px;
+    background-size: 200px;
     display: block;
+    position: absolute;
+    margin-top: 10px;
 }
-
-
-a {
-    color: red;
-    text-decoration: none;
-    font-family: bello-caps, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18pt;
-}
-
 
 
 /* START of Mobile Menu */
 .nav,
 .desktop {
     display: block;
-    position: fixed;
-    top: 50px;
-    left: 0px;
     width: 100%;
     z-index: 900;
     padding-bottom: 0px;
+    padding-top: 50px;
+    padding-right: 20px;
+    color: red;
+    text-decoration: none;
+    font-family: bello-caps, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18pt;
 }
 
 .icon {
@@ -156,68 +158,19 @@ a {
 /* END OF Mobile Menu */
 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-    /* START of desktop menu for 768 media query */
-    .menu-desktop {
-        width: 100%;
-        display: block;
-        padding: 0;
-        line-height: 50px;
-        justify-content: space-evenly;
-        flex-direction: row;
-        height: 0;
-        text-align: right;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    .menu-desktop a {
-        display: inline-flex;
-        margin-right: 30px;
-        height: 0;
-        line-height: 50px;
-        text-decoration: none;
-        color: #C4050D;
-        justify-content: space-evenly;
-    }
-
-    .menu-desktop a:hover {
-        color: red;
-    }
-
-
-    .desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        display: block;
-    }
-
-    header.nav,
-    .menu-mobile {
-        display: none;
-    }
-
-    /* END of desktop menu for 768 media query */
-
-}
-
 /*---------------------HOMEPAGE----------------------------------*/
 
 .container-red {
     background-color: #C4050D;
-    margin-top: 0px;
-    padding: 40px;
-    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 850px;
+    padding-top: 40px;
     padding-bottom: 150px;
     margin-left: 100px;
     margin-right: 100px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
-    margin-bottom: 200px
+    margin-bottom: 100px
 }
 
 .container-red h2 {
@@ -234,8 +187,7 @@ a {
     font-size: 20pt;
     padding-top: 30px;
     line-height: 1.2;
-    padding-right: 800px;
-    min-width: 602px;
+    width: 600px
 }
 
 .container-red h3 {
@@ -247,30 +199,25 @@ a {
 }
 
 .island {
-    background-image: url('../images/island-1-04.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 200px;
-    margin-top: -70px;
-    font-family: bello-pro, sans-serif;
-    color: white;
-    font-size: 55pt;
-    text-align: right;
-    padding-right: 40px;
-    
+    margin-left: -20px;
+    padding-top: 20px
 }
 
+.island h1 {
+    font-family: bello-pro, sans-serif;
+    color: white;
+    font-size: 72pt;
+    text-align: right;
+    margin-top: -200px;
+    padding-right: 50px;
+    opacity: .9
+}
 
 
 .og-roxys {
-    margin-top: -600px;
-    margin-left: 800px ;
+    margin-top: -550px;
+    margin-left: 800px;
     width: 70%;
-}
-
-body {
-    overflow-x: hidden;
-    min-height: 200vh;
 }
 
 .quote-slider {
@@ -280,7 +227,7 @@ body {
     list-style: none;
     display: block;
     position: relative;
-    margin-top: 30px
+    margin-top: 50px;
 }
 
 .quote-slider li {
@@ -331,19 +278,66 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0 100px;
+    margin-bottom: -130px;
 }
 
 .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    flex: 20%;
+    max-width: 100%;
+    padding: 50px 20px 0px 20px;
 }
 
+
 .column img {
-    margin-top: 8px;
+    margin-top: 20px;
     vertical-align: middle;
     width: 100%;
+    height: 25%;
+    border-radius: 30px;
+    box-shadow: 5px 10px 5px lightgrey;
+}
+
+#myBtn-2 {
+    background-color: none;
+    color: black;
+    font-family: cronos-pro, sans-serif;
+    font-size: 12pt;
+    margin-left: 50%;
+    
+    
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #C4050D;
+    color: white;
+    height: 140px
+}
+
+.footer .facebook {
+    background-color: #FFF6D7;
+    display: inline-block;
+    padding: 10px 10px 7px 10px;
+    border-radius: 100%;
+}
+
+
+.footer a {
+    color: #FFF6D7;
+    text-decoration: none;
+    font-family: bello-caps, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18pt;
+    display: inline-block;
+    padding: 50px 50px 0px 50px;
+}
+
+.footer a:hover {
+    color: #F4DC22
 }
 
 /*---------------------LOCATIONS----------------------------------*/
@@ -411,16 +405,6 @@ a.go-here {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*-------------------------CONTACT FORM---------------------------*/
 
 input[type=text],
@@ -434,7 +418,9 @@ textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-
+    background-color: white;
+    color: black;
+    font-family: cronos-pro, sans-serif;
 }
 
 input[type=submit] {
@@ -459,14 +445,13 @@ input[type=submit]:hover {
     padding-left: 80px;
     padding-right: 80px;
     padding-bottom: 60px;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 180px;
     margin-right: 180px;
     font-family: bello-caps, sans-serif;
     color: black;
     box-shadow: 10px 10px 5px lightgrey;
-
-
+    margin-bottom: 50px
 }
 
 .form-top {
@@ -487,20 +472,179 @@ input[type=submit]:hover {
     min-width: 260px
 }
 
+
+/*---------------------Menu----------------------------------*/
+
+
+.menuContainer {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+    margin-top: 100px;
+}
+
+buton, input {
+	font-size: 12px;
+	padding: 5px 10px 15px;
+}
+
+#btnAll {
+	background-color: #F4DC22; 
+	padding-bottom:10px;
+}
+
+.menuListContainer {
+	background-color: #F4DC22; 
+	min-height: 500px; 
+	position: relative; 
+	top: 30px; 
+	width:90%; 
+	border-radius: 15px; 
+	border-right: 1px solid #F4DC22; 
+	border-bottom: 1px solid #F4DC22; 
+	padding:20px 0 0 25px;
+	padding:20px 0 0 25px;
+}
+
+.menuListContainer h2 {
+    color: Black;
+    font-size: 20px;
+    font-family: cronos-pro, sans-serif;
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+.menuListContainer li {
+    color: black;
+    font-family: cronos-pro, sans-serif;
+    padding: 10px
+}
+
+.tabsContainer {
+	position: absolute; 
+	top:0;
+}
+
+.menuContainer {
+	display: block; 
+	width:80%; 
+	margin-left: 10%; 
+	margin-right: 10%; 
+	position: relative; 
+	font-family: bello-pro, sans-serif; 
+	font-size: 16px;
+}
+
+
+.allMenuColor {background-color: #;}
+
+.activeButton {background-color: #FFD485;}
+
+button, input {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-left: none;
+  border-top:  1px solid #F4DC22;
+  border-bottom: none;
+  border-right: 1px solid #F4DC22;
+  color: #1DA503;
+  border-radius: 5px 5px 0 0;
+  background-color: #F4DC22;
+  font-family: bello-Caps, sans-serif; 
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* START of desktop menu for 768 media query */
+    .menu-desktop {
+        width: 100%;
+        display: block;
+        padding: 0;
+        line-height: 50px;
+        justify-content: space-evenly;
+        flex-direction: row;
+        height: 0;
+        text-align: right;
+    }
+
+    .menu-desktop a {
+        display: inline-flex;
+        margin-right: 40px;
+        height: 0;
+        line-height: 50px;
+        text-decoration: none;
+        color: #C4050D;
+        justify-content: space-evenly;
+    }
+
+    .menu-desktop a:hover {
+        color: red;
+    }
+
+
+
+    .desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        display: block;
+    }
+
+    header.nav,
+    .menu-mobile {
+        display: none;
+    }
+
+    /* END of desktop menu for 768 media query */
+
+}
+
+
+
 /*----------------------MEDIA QUERIES------------------------------*/
 @media only screen and (max-width: 768px) {
 
-    body {}
+    body {
+        overflow-x: hidden;
+        min-height: 100vh;
+    }
 
     .logo {
         margin-left: 30px;
         float: left;
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
         background: url(../images/roxys-logo.png) no-repeat center;
         background-size: 200px;
         display: block;
+        position: absolute;
+        margin-top: 10px;
     }
+
 
     .container {
         width: 430px;
@@ -508,98 +652,75 @@ input[type=submit]:hover {
 
     .container-red {
         background-color: #C4050D;
-        margin-top: 350px;
-        padding: 40px;
-        padding-bottom: 250px;
-        margin-left: 30px;
-        margin-right: 30px;
-        border-radius: 40px;
+        padding-left: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        width: 620px;
     }
+
 
     .container-red h2 {
         font-family: bello-caps, sans-serif;
         color: white;
-        font-size: 30pt;
-        padding-top: 40px
+        font-size: 25pt;
+        padding-top: 60px
     }
 
     .container-red p {
         font-family: cronos-pro, sans-serif;
         font-weight: 200;
         color: white;
-        font-size: 20pt;
-        padding-top: 30px;
+        font-size: 16pt;
         line-height: 1.2;
-        padding-right: 0
+        width: 510px;
+        padding-top: 10px;
+        padding-bottom: 20px
     }
 
     .container-red h3 {
         font-family: bello-pro, sans-serif;
         color: white;
-        font-size: 60pt;
-        margin-left: 280px;
+        font-size: 40pt;
+        margin-left: 360px;
         padding-bottom: 10px;
     }
 
 
-    .island {
-        background-image: url('../images/island-1-04.png');
-        padding: 200px;
-        margin-top: -20px;
-    }
-
-    .tradition {
+    .island h1 {
         font-family: bello-pro, sans-serif;
         color: white;
-        font-size: 55pt;
+        font-size: 45pt;
         text-align: right;
-        padding-right: 25px;
-        margin-top: -150px
+        margin-top: -150px;
+        padding-right: 20px;
+        opacity: .9
     }
 
     .og-roxys {
-        margin-top: -250px;
+        margin-top: -350px;
+        margin-left: 0px;
+        width: 100%;
         text-align: center;
-        padding-bottom: 20px
     }
 
-    body {
-        overflow-x: hidden;
-        min-height: 200vh;
-    }
 
     .quote-slider {
-        width: 100%;
-        height: 300px;
-        background-color: #F4DC22;
-        list-style: none;
-        display: block;
-        position: relative;
-        margin-top: 30px
-    }
-
-    li {
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: -60%;
-        width: 60%;
-        font-family: cronos-pro, serif;
-        font-weight: 700;
-        font-size: 18pt;
-        color: #1DA503;
-        text-shadow: 1px 1px 0px white;
-        font-style: italic;
-        text-align: center;
-        z-index: 5
-    }
-
-    .site {
-        font-family: cronos-pro, sans-serif;
-        font-style: normal;
+        height: 200px;
         margin-top: 40px;
-        font-size: 18pt
+    }
+
+
+    .quote-slider li {
+        width: 50%;
+        text-align: center;
+        font-size: 14pt
+    }
+
+    .quote-slider li .site {
+        margin-top: 20px;
+        font-size: 12pt;
     }
 
     .arrow {
@@ -683,30 +804,74 @@ input[type=submit]:hover {
         text-align: center;
         font-style: oblique;
     }
-}
 
-@media screen and (max-width: 800px) {
     .column {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
+        flex: 2%;
         max-width: 100%;
+        padding: 80px 0px 0px 0px;
     }
+
+    .column img {
+        margin-top: 15px;
+        vertical-align: middle;
+        width: 100%;
+        height: 25%;
+        border-radius: 15px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        margin-bottom: -50px;
+    }
+
+    .footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #C4050D;
+        color: white;
+        height: 100px;
+    }
+
+    .footer a {
+        padding: 40px 30px;
+    }
+
+
+    .footer .facebook {
+        margin-right: 20px;
+        margin-left: 30px;
+    }
+
+
+    @media screen and (max-width: 800px) {
+        .column {
+            padding: 20px 4px 0 4px;
+        }
+
+        .container-red {
+            background-color: #C4050D;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 0px;
+            padding-bottom: 150px;
+            margin-left: 50px;
+            margin-right: 50px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            margin-bottom: 200px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {}
+
+
+    @media only screen and (max-width: 1024px) {}
 }
 
-@media only screen and (max-width: 1024px) {
-    body {}
 
 
 
-}
 
-
-@media only screen and (min-width: 1200px) {
-    body {}
-}
