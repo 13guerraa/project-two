@@ -418,8 +418,7 @@ a.go-here {
     margin-left: 120px;
     margin-right: 120px;
     background-color: #F4DC22;
-    margin-bottom: 0px;
-    padding-bottom: 150px;
+    padding-bottom: 0px;
     padding-top: 80px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -436,10 +435,13 @@ a.go-here {
     margin-top: -640px;
 }
 
-.map2 {
-    display: none
+.map-mobile {
+    display: none;
 }
 
+.locations-mobile {
+    display: none;
+}
 
 /*-------------------------CONTACT FORM---------------------------*/
 
@@ -513,7 +515,7 @@ input[type=submit]:hover {
 
 
 .menuContainer {
-    width: 90%;
+    width: 60%;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 100px;
@@ -521,8 +523,9 @@ input[type=submit]:hover {
 
 buton,
 input {
-    font-size: 12px;
-    padding: 5px 10px 15px;
+    font-size: 14px;
+    padding: 0px 10px 15px;
+    margin-bottom: 20px;
 }
 
 #btnAll {
@@ -535,13 +538,17 @@ input {
     min-height: 500px;
     position: relative;
     top: 30px;
-    width: 90%;
+    width: 53%;
     border-radius: 15px;
     border-right: 1px solid #F4DC22;
     border-bottom: 1px solid #F4DC22;
     padding: 20px 0 0 25px;
     padding: 20px 0 0 25px;
+    margin-bottom: 50px;
+    text-align: center
 }
+
+
 
 .menuListContainer h2 {
     color: Black;
@@ -549,12 +556,14 @@ input {
     font-family: cronos-pro, sans-serif;
     font-weight: 800;
     padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: underline;
 }
 
 .menuListContainer li {
     color: black;
     font-family: cronos-pro, sans-serif;
-    padding: 10px
+    padding: 10px;
 }
 
 .tabsContainer {
@@ -578,7 +587,8 @@ input {
 }
 
 .activeButton {
-    background-color: #FFD485;
+    text-decoration: underline;
+    color: #1DA503;
 }
 
 button,
@@ -590,7 +600,7 @@ input {
     border-top: 1px solid #F4DC22;
     border-bottom: none;
     border-right: 1px solid #F4DC22;
-    color: #1DA503;
+    color: black;
     border-radius: 5px 5px 0 0;
     background-color: #F4DC22;
     font-family: bello-Caps, sans-serif;
@@ -807,17 +817,17 @@ input {
         text-align: center
     }
 
-    .locations h1 {
+    .locations-mobile h1 {
         font-family: cronos-pro, sans-serif;
         font-weight: 600;
         font-size: 24pt;
         color: #C4050D;
         text-align: center;
-        padding-top: 60px;
+        padding-top: 10px;
         padding-left: 0px;
     }
 
-    .locations p {
+    .locations-mobile p {
         font-family: cronos-pro, sans-serif;
         font-size: 18pt;
         text-align: center;
@@ -825,19 +835,20 @@ input {
         padding-left: 0px
     }
 
-    .locations p.address {
+    .locations-mobile p.address {
         font-family: cronos-pro, sans-serif;
         font-size: 14pt;
         text-align: center;
         padding-top: 10px;
     }
 
-    .locations p.hours {
+    .locations-mobile p.hours {
         font-family: cronos-pro, sans-serif;
         font-size: 12pt;
         text-align: center;
         padding-top: 10px;
-        line-height: 1.2
+        line-height: 1.2;
+        padding-bottom: 20px
     }
 
     a.go-here {
@@ -872,6 +883,7 @@ input {
     .footer a {
         margin-top: 0px;
         padding: 40px 30px;
+
     }
 
 
@@ -885,13 +897,42 @@ input {
         margin-top: 100px;
         margin-left: 30px;
         margin-right: 30px;
+        margin: -20px;
+        padding-bottom: 0px;
+
     }
 
-    .locations h1 {
-        padding-top: 40px
+
+    .locations {
+        display: none;
     }
 
+    .locations-mobile {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px
+    }
+
+    .map-mobile {
+        display: block;
+        padding-left: 40px;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .menuListContainer {
+    width: 90%;
+    }
 }
+
+
+
+
+
+
+
 
 @media screen and (max-width: 800px) {
     .column {
@@ -911,11 +952,3 @@ input {
         margin-bottom: 200px;
     }
 }
-
-@media screen and (max-width: 600px) {}
-
-
-@media only screen and (max-width: 1024px) {}
-}
-
-
